@@ -1,0 +1,6 @@
+train: ../persondb/images/training
+val: ../persondb/images/validation
+#number of classes
+nc: 2
+#class names
+names: ['people','item']
