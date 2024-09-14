@@ -4,6 +4,18 @@ cpt = 0
 maxFrames = 85 # if you want 5 frames only.
 
 count=0
+# cctv stream
+# stream_url = 'rtsp://username:password@IP_address:Port/path'
+
+# Initialize the CCTV stream using OpenCV
+# cap = cv2.VideoCapture(stream_url)
+
+# Check if the stream was opened successfully
+# if not cap.isOpened():
+#     print("Error: Could not open CCTV stream.")
+#     exit()
+
+
 cap=cv2.VideoCapture('cr.mp4')
 while cpt < maxFrames:
     ret, frame = cap.read()
